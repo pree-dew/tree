@@ -115,9 +115,8 @@ func (t *Tree[K, V]) print(w io.Writer, n *Node[K, V], level int) {
 
 		if e < len(n.Elements) {
 			w.Write([]byte(strings.Repeat("  ", level)))
-			//fmt.Fprintf(w, "%v\n", len(n.Children))
 			//w.Write([]byte(strings.Repeat("  ", level)))
-			fmt.Fprintf(w, "%v\n", n.Elements[e].Key)
+			fmt.Fprintf(w, "%v\n", n.Elements[e].Value)
 		}
 	}
 }
