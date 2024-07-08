@@ -5,12 +5,8 @@ import (
 	"fmt"
 	"io"
 	"strings"
-
-	"github.com/pree-dew/tree"
 )
 
-// Tree should comply with the tree.Tree interface
-var _ tree.Tree[int] = (*Tree[string, int])(nil)
 
 // Tree is a generic n-ary tree
 type Tree[K comparable, V any] struct {

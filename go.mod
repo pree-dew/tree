@@ -2,8 +2,6 @@ module github.com/pree-dew/tree
 
 go 1.21.11
 
-replace github.com/pree-dew/tree => ./
-
 require github.com/stretchr/testify v1.9.0
 
 require (
