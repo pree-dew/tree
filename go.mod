@@ -1,4 +1,4 @@
-module tree
+module github.com/pree-dew/tree
 
 go 1.21.11
 
